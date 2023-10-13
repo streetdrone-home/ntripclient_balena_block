@@ -14,7 +14,7 @@ SLEEP_MAX=10000  # Wait max sec for next reconnect try
          ${NTRIP_USERNAME:+--user ${NTRIP_USERNAME}} \
          ${NTRIP_PASSWORD:+--password ${NTRIP_PASSWORD}} \
          ${NTRIP_SERDEVICE:+--serdevice ${NTRIP_SERDEVICE}} \
-         ${NTRIP_BAUD:+--baud ${BAUD}}
+         ${NTRIP_BAUD:+--baud ${NTRIP_BAUD}}
 
   # If exited successfully (with exit status of 0), reset the outage start time
   if test $? -eq 0; then DATE_START=`date -u '+%s'`; fi
